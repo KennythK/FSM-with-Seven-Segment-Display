@@ -1,0 +1,51 @@
+//Timer module
+module timer_module(clock, reset, slow_clock);
+
+parameter lowcount = 2500;
+
+input clock, reset;
+output reg slow_clock;
+reg count;
+always@(negedge reset, posedge clock)\
+	if(!reset)
+		begin
+		count <= 0;
+		slow_clock <= 0;
+		end
+	else if (count==lowcount)
+		begin
+		count <= 0;
+		slow_clock <= !slow_clock;
+		end
+endmodule
+
+//Counter module
+module counter(R, resetn, Clock, L, E, up_down, Q);
+input[7:0]R;
+input Clock, L, E, up_down, resetn;
+output reg [7:0]Q;
+
+always @(negedge resetn, posedge Clock)
+	if(!resetn)
+		Q <= 0;
+	else if (L)
+		Q <= R;
+	else if (E)
+		Q < = Q + 1;
+		
+endmodule
+
+//Seven Segment Display
+module seven_segment(q,h)
+input[3:0]q;
+output[6:0]h;
+
+assign h[0] = (q[2] & ~q[1] & ~q[0]) + (~q[3] & ~q[2] & ~q[1] & q[0]);
+assign h[1] = (q[2] & (q[1] ^ q[0]));
+assign h[2] = ~q[2] & q[1] & ~q[0];
+assign h[3] = (q[2] & ~q[1] & ~q[0]) + (~q[2] & ~q[1] & q[0]) + (q[2] & q[1] & q[0]);
+assign h[4] = (~q[1] & q[0]) + (~q[3] & q[2] & ~q[1]) + (~q[3] & q[2] & q[0]);
+assign h[5] = (q[1] & q[0]) + (~q[3] & ~q[2] & q[1]) + (~q[3] & ~q[2] & q[0]);
+assign h[6] = (~q[3] & ~q[2] & ~q[1]) + (q[1] & q[2]);
+
+endmodule

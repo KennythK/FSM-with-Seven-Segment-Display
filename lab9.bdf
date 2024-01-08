@@ -1,0 +1,409 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 440 224 616 240)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "clock" (rect 9 0 34 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 376 240 440 264))
+)
+(pin
+	(input)
+	(rect 440 272 616 288)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "resetn" (rect 9 0 39 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 368 288 440 312))
+)
+(pin
+	(input)
+	(rect 440 296 616 312)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "updown" (rect 9 0 45 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 368 312 440 336))
+)
+(pin
+	(input)
+	(rect 440 248 616 264)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "reset" (rect 9 0 33 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "GND" (rect 136 7 157 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 872 224 1048 240)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "slowclock" (rect 90 0 137 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1048 240 1112 264))
+)
+(pin
+	(output)
+	(rect 872 248 1048 264)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "h[6..0]" (rect 90 0 121 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 1048 264 1120 288))
+)
+(symbol
+	(rect 296 512 512 640)
+	(text "myRom" (rect 86 0 139 16)(font "Arial" (font_size 10)))
+	(text "inst7" (rect 8 112 31 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "address[7..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "address[7..0]" (rect 4 18 79 32)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 88 32)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 98 33 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 80 112))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "q[7..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "q[7..0]" (rect 183 18 218 32)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(text "8 bits" (rect 109 23 121 50)(font "Arial" )(vertical))
+		(text "256 words" (rect 120 13 132 62)(font "Arial" )(vertical))
+		(text "Block type: AUTO" (rect 48 114 137 126)(font "Arial" ))
+		(line (pt 104 24)(pt 136 24))
+		(line (pt 136 24)(pt 136 96))
+		(line (pt 136 96)(pt 104 96))
+		(line (pt 104 96)(pt 104 24))
+		(line (pt 118 58)(pt 123 63))
+		(line (pt 118 62)(pt 123 57))
+		(line (pt 88 27)(pt 96 27))
+		(line (pt 96 27)(pt 96 39))
+		(line (pt 96 39)(pt 88 39))
+		(line (pt 88 39)(pt 88 27))
+		(line (pt 88 34)(pt 90 36))
+		(line (pt 90 36)(pt 88 38))
+		(line (pt 80 36)(pt 88 36))
+		(line (pt 96 32)(pt 104 32)(line_width 3))
+		(line (pt 80 112)(pt 80 36))
+		(line (pt 0 0)(pt 217 0))
+		(line (pt 217 0)(pt 217 130))
+		(line (pt 0 130)(pt 217 130))
+		(line (pt 0 0)(pt 0 130))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)
+(symbol
+	(rect 816 352 992 464)
+	(text "counter" (rect 5 0 41 12)(font "Arial" ))
+	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock" (rect 0 0 25 12)(font "Arial" ))
+		(text "clock" (rect 21 27 46 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "updown" (rect 0 0 36 12)(font "Arial" ))
+		(text "updown" (rect 21 59 57 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "resetn" (rect 0 0 30 12)(font "Arial" ))
+		(text "resetn" (rect 21 75 51 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "count[7..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "count[7..0]" (rect 111 27 155 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32)(line_width 3))
+	)
+	(parameter
+		"n"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 160 96))
+	)
+	(annotation_block (parameter)(rect 816 312 992 352))
+)
+(symbol
+	(rect 504 368 672 448)
+	(text "timer_module" (rect 5 0 71 12)(font "Arial" ))
+	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clock" (rect 0 0 25 12)(font "Arial" ))
+		(text "clock" (rect 21 27 46 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "slow_clock" (rect 0 0 53 12)(font "Arial" ))
+		(text "slow_clock" (rect 103 27 156 39)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(parameter
+		"lowcount"
+		"10000000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 152 64))
+	)
+	(annotation_block (parameter)(rect 496 328 692 366))
+)
+(symbol
+	(rect 824 512 976 592)
+	(text "seven_segment" (rect 5 0 84 12)(font "Arial" ))
+	(text "inst10" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "q[3..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "q[3..0]" (rect 21 27 52 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "h[6..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "h[6..0]" (rect 105 27 136 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+)
+(connector
+	(text "clock" (rect 474 384 498 401)(font "Intel Clear" ))
+	(pt 464 400)
+	(pt 504 400)
+)
+(connector
+	(text "reset" (rect 474 400 497 417)(font "Intel Clear" ))
+	(pt 504 416)
+	(pt 464 416)
+)
+(connector
+	(text "h[6..0]" (rect 834 240 863 257)(font "Intel Clear" ))
+	(pt 824 256)
+	(pt 872 256)
+	(bus)
+)
+(connector
+	(text "updown" (rect 778 400 815 417)(font "Intel Clear" ))
+	(pt 816 416)
+	(pt 768 416)
+)
+(connector
+	(text "resetn" (rect 778 416 807 433)(font "Intel Clear" ))
+	(pt 816 432)
+	(pt 768 432)
+)
+(connector
+	(text "reset" (rect 778 384 801 401)(font "Intel Clear" ))
+	(pt 768 400)
+	(pt 816 400)
+)
+(connector
+	(text "slowclock" (rect 778 368 825 385)(font "Intel Clear" ))
+	(pt 768 384)
+	(pt 816 384)
+)
+(connector
+	(text "slowclock" (rect 672 384 719 401)(font "Intel Clear" ))
+	(pt 672 400)
+	(pt 720 400)
+)
+(connector
+	(text "slowclock" (rect 834 216 881 233)(font "Intel Clear" ))
+	(pt 824 232)
+	(pt 872 232)
+)
+(connector
+	(text "q[7..0]" (rect 522 528 551 545)(font "Intel Clear" ))
+	(pt 512 544)
+	(pt 552 544)
+	(bus)
+)
+(connector
+	(text "count[7..0]" (rect 256 528 305 545)(font "Intel Clear" ))
+	(pt 296 544)
+	(pt 256 544)
+	(bus)
+)
+(connector
+	(text "clock" (rect 266 608 290 625)(font "Intel Clear" ))
+	(pt 296 624)
+	(pt 256 624)
+)
+(connector
+	(pt 968 384)
+	(pt 992 384)
+	(bus)
+)
+(connector
+	(text "count[7..0]" (rect 992 368 1041 385)(font "Intel Clear" ))
+	(pt 992 384)
+	(pt 1048 384)
+	(bus)
+)
+(connector
+	(pt 608 232)
+	(pt 616 232)
+)
+(connector
+	(text "clock" (rect 618 216 642 233)(font "Intel Clear" ))
+	(pt 616 232)
+	(pt 640 232)
+)
+(connector
+	(pt 608 280)
+	(pt 616 280)
+)
+(connector
+	(text "resetn" (rect 618 264 647 281)(font "Intel Clear" ))
+	(pt 616 280)
+	(pt 640 280)
+)
+(connector
+	(pt 608 304)
+	(pt 616 304)
+)
+(connector
+	(text "updown" (rect 618 288 655 305)(font "Intel Clear" ))
+	(pt 616 304)
+	(pt 640 304)
+)
+(connector
+	(pt 608 256)
+	(pt 616 256)
+)
+(connector
+	(text "reset" (rect 618 240 641 257)(font "Intel Clear" ))
+	(pt 616 256)
+	(pt 640 256)
+)
+(connector
+	(text "q[3..0]" (rect 802 528 831 545)(font "Intel Clear" ))
+	(pt 792 544)
+	(pt 824 544)
+	(bus)
+)
+(connector
+	(text "h[6..0]" (rect 986 528 1015 545)(font "Intel Clear" ))
+	(pt 976 544)
+	(pt 1008 544)
+	(bus)
+)
+(junction (pt 992 384))
+(junction (pt 616 232))
+(junction (pt 616 256))
+(junction (pt 616 280))
+(junction (pt 616 304))
